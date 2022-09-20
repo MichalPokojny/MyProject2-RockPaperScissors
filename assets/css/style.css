@@ -12,5 +12,14 @@ body {
 }
 
 .btn {
+    height: 70px;
+    width: 80px;
+    border-radius: 50%;
+    font-size: 1rem;
     
+}
+.btn:hover, .btn:active{
+    background-color:#28dbb4;
+    color: #ff00ea;
+    transition: 0.4s;
 }
