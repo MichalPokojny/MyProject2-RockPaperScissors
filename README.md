@@ -1,108 +1,205 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# [Rock Paper Scissors Lizard Spock](https://michalpokojny.github.io/MyProject2-RockPaperScissorsLizardSpock/)
 
-Welcome USER_NAME,
+Some Description
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+<p align="center">
+  <img src="docs/responsive-image.png">
+</p>
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## User stories
 
-## Gitpod Reminders
+- As a visiting user, I am interested to travel to the centre of Europe to discover Slovakia.
+- As a visiting user, I would like to see pictures of the country so I can decide if I want to visit.
+- As a visiting user, I would like to contact the company to book a trip.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Features
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
+**Navigation**
 
-Another blue button should appear to click: _Open Browser_.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
+![Navigation bar]() 
 
-Another blue button should appear to click: _Open Browser_.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+**The header**
 
-To log into the Heroku toolbelt CLI:
+- Banner photo with fade-in effect on the main page.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+**The gallery section**
+- The gallery section shows 3 different sections of images where the
+user can interact with them by zooming in and out. If using a desktop
+the user can hover over the images and if using smaller devices
+tapping on the images gives the same effect.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+![Gallery section](docs/gallery.png) 
 
-------
+**The contact section**
+- The contact section includes a simple registration form for upcoming
+trips that collect details of potential customers and other requests.
+- The following input fields First Name, Last name, Email address, and
+Requests are required to successfully send the form.
+- The submit button on the form has a zoom-in effect similar to the
+functionality of the gallery that displays the images of Slovakia.
+- To get this effect when hovering over a desktop device and clicking on
+smaller devices. There are further contact details displayed on the
+page giving customers more ways of getting in touch with the company.
 
-## Release History
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+<p align="center">
+  <img src="docs/contact.png">
+</p>
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+<br>
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+-  Once the user submits the form, the webpage navigates to a new screen
+that displays a textbox confirming the submission was successful.
+<br>
+<br>
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+![Thank you page](docs/submit-page.png) 
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+**Footer**
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+- There are links to three social media platforms located at the bottom
+of every page. On select of these buttons, the users navigate to new
+tabs that display the company's profile accounts on Facebook,
+Instagram, or Youtube.
+  
+<p align="center">
+  <img src="docs/social.png">
+</p>
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+## Future features
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+- Upgrade this website with increased functionality such as including a
+calendar component that displays days and dates of the current month.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+- Upgrade the navigation bar, to have it fixed to the top right hand
+corner of the screen even if the user scrolls down the page.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## Typography and color scheme
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+**Fonts**
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+- Fonts are taken from Google Fonts
+- A font named Jost is used for headings and Logo
 
-------
+![Jost font](docs/jost.png)
 
-## FAQ about the uptime script
+- A font named Manrope is used for the main text and form.
 
-**Why have you added this script?**
+![Manrope font](docs/manrope.png)
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
 
-**How will this affect me?**
+**Colour**
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+- Colour pallet used for website.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+![Web color](docs/colors.png)
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+## Wireframes
 
-**So….?**
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+![wireframe of desktop]()
+<br>
+<p align="center">
+  <img src="">
+</p>
 
-**Can I opt out?**
+<br>
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+<p align="center">
+  <img src="">
+</p>
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
 
-**Anything more?**
+## Technologies used
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+- Balsamiq - Wireframe planning.
+- HTML5 - Main structure of the website.
+- CSS3 - Styling of the website.
+- Javascript - Website Interactive Part (description to be edited)
+- GitPod - Workspace of the project.
+- GitHub - Hosting the website.
+- Grammarly - Grammar check of all the text in the website and readme file.
+- Google Chrome - Main testing of the website on all devices.
+- Google Chrome Lighthouse - Testing the performance of each page.
 
----
+## Testing
 
-Happy coding!
+
+- I tested this webpage on Google Chrome, Mozilla Firefox, and on Safari.
+- I confirmed that this project is fully responsive, and works on every screen device using the dev tools device toolbar.
+- I confirmed that the registration form submits once all required fields have data inputted.
+
+### Bugs
+
+**Solved bugs**
+
+- When I first imported all of the photos I used the highest resolution available. I also made a long path to the source and so the performance of the
+page was too slow.
+I replaced them with an appropriate resolution for both desktop and mobile
+devices which increased the loading speed. 
+
+**Validator testing**
+
+- HTML 
+-- No errors were returned when passing through the official W3C validator.
+- CSS
+-- No errors were found when passing through the official validator.
+- Accessibility
+-- I confirmed that the images, colours and fonts chosen are easy to read and accessible by running it through the Google Chrome lighthouse in devtools.
+
+#### Desktop Home page 
+![home-lighthouse]()
+
+#### Desktop Gallery page
+![gallery-lighthouse]()
+
+#### Desktop Contact page
+![contact-lighthouse]()
+
+**Unfixed bugs**
+
+No unfixed bugs
+
+## Deployment
+
+- The site was deployed to GitHub pages. The steps to deploy are as follows:
+
+  - In the GitHub repository, navigate to the Settings tab
+  - From the source section drop-down menu, select the Master Branch
+  - Once the Master Branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
+  The live link can be found here - https://michalpokojny.github.io/MyProject2/
+
+  - The site can be also deployed on GitPod. The steps to deploy are as follows:
+   - In the gitpod workspace go to MyProject1 click on the index.html
+   - Once opened, in the terminal type: python3 -m http.server
+   - Local link will appear in the terminal, click on it and the webpage will open in a new tab
+
+   
+
+
+## Credits
+
+
+**Content**
+- Animations on the main page and gallery were taken from  [w3schools](w3schools.com)
+- Colours image taken from [Coolors](https://coolors.co/)
+- The code to link the social media and main logo and navigation bar inspiration was taken from the [Love Running](https://code-institute-org.github.io/love-running-2.0/index.html) project at [Code Institute](https://codeinstitute.net/ie/)
+- Writing of readme file I got inspired at the CodeIntitute readme sample project.
+
+**Media**
+
+- All the images were taken from [imgbin](https://imgbin.com/)
+
+## Acknowledgements
+
+
+- First I would like to thank my partner Jane for her continuous support and for helping me with grammar checks and correct wording.
+- I would like to also thank my mentor [Rohit Sharma](https://github.com/rohit0286) for the support in deploying my first project.
