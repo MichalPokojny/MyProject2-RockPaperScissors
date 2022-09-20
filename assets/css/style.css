@@ -32,11 +32,9 @@ body {
     background-color:#28dbb4;
     color: #ff00ea;  
 }
-
 p {
     font-size: 1rem;
 }
-
 .player {
     display: inline-block;
     float: left;
@@ -64,4 +62,7 @@ p {
     margin:0 auto;
     margin-top: 50px;
     width: 100%;
+}
+#game-heading {
+    color:#ff00ea;
 }
