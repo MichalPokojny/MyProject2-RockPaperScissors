@@ -1,10 +1,19 @@
+* {
+    margin: 0;
+	padding: 0;
+	border: none;
+}
+
 body {
     background-color: #FFFFFF;
     font-family: 'Roboto Mono', monospace;
     text-align: center;
 }
-
+.game-area {
+    margin-top: 10px;
+}
 .heading {
+    margin-top: 15px;
     color: #8d2a2a;
     text-align: center;
     font-size: 2rem;
@@ -12,6 +21,7 @@ body {
 }
 
 .btn {
+    margin-top: 10px;
     height: 70px;
     width: 80px;
     border-radius: 50%;
@@ -22,4 +32,34 @@ body {
     background-color:#28dbb4;
     color: #ff00ea;
     transition: 0.4s;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.player {
+    display: inline-block;
+    float: left;
+    margin-top: 10px;
+    
+    width: 50%;
+}
+.computer {
+    display: inline-block;
+    margin-top: 10px;
+    float: right;
+    
+    width: 50%;
+}
+#player-image {
+    width: 140px;
+    
+}
+#computer-image {
+    width: 140px; 
+}
+.score {
+    
+    margin-top: 15px;
 }
