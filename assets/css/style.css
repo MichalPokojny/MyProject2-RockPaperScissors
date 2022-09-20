@@ -9,29 +9,28 @@ body {
     font-family: 'Roboto Mono', monospace;
     text-align: center;
 }
-.game-area {
-    margin-top: 10px;
-}
 .heading {
-    margin-top: 15px;
+    margin-top: 10px;
     color: #8d2a2a;
     text-align: center;
     font-size: 2rem;
     word-spacing: 2px;
 }
-
+.game-area {
+    margin-top: 30px;
+}
 .btn {
+    background-color: #ececec;
+    color: #0066ff;
     margin-top: 10px;
     height: 70px;
     width: 80px;
     border-radius: 50%;
-    font-size: 1rem;
-    
+    font-size: 1rem;   
 }
-.btn:hover, .btn:active{
+.btn:hover{
     background-color:#28dbb4;
-    color: #ff00ea;
-    transition: 0.4s;
+    color: #ff00ea;  
 }
 
 p {
@@ -41,25 +40,28 @@ p {
 .player {
     display: inline-block;
     float: left;
-    margin-top: 10px;
-    
+    margin-top: 20px;
     width: 50%;
 }
 .computer {
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 20px;
     float: right;
-    
     width: 50%;
 }
 #player-image {
-    width: 140px;
-    
+    width: 140px;   
 }
 #computer-image {
     width: 140px; 
 }
-.score {
-    
-    margin-top: 15px;
+.score {  
+    margin-top: 10px;
+}
+.rules {
+    display: inline-block;
+    background-color: #ececec;
+    margin:0 auto;
+    margin-top: 50px;
+    width: 100%;
 }
