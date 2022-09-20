@@ -1,0 +1,16 @@
+body {
+    background-color: #FFFFFF;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+}
+
+.heading {
+    color: #8d2a2a;
+    text-align: center;
+    font-size: 2rem;
+    word-spacing: 2px;
+}
+
+.btn {
+    
+}
