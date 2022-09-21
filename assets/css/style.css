@@ -58,8 +58,7 @@ p {
 .rules {
     display: inline-block;
     background-color: #ececec;
-    margin:0 auto;
-    margin-top: 10px;
+    margin:10px auto;
     width: fit-content;
     
 }
