@@ -53,8 +53,11 @@ for (let button of buttons) {
 function playGame(playerChoice) {
     playerImage.src = `assets/images/${choice[playerChoice]}.png`
     playerImage.alt = choice[playerChoice];
-    computerImage.src = `assets/images/lizard.png` 
-    let computerChoice = Math.floor(Math.random() * 3);
+    
+    let computerChoice = Math.floor(Math.random() * 4);
+
+    computerImage.src = `assets/images/${choice[computerChoice]}.png`
 
 
 }
+
