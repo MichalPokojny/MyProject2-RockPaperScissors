@@ -16,12 +16,13 @@
     <section class="game-area">
         <h2>Choose your gesture:<h2></h2>
     <div class="button-area">
-        <button class="btn btn-rock" data-choice="0">Rock</button>
-        <button class="btn btn-paper" data-choice="1">Paper</button>
-        <button class="btn btn-scissors" data-choice="2">Scissors</button><br>
-        <button class="btn btn-lizard" data-choice="3">Lizard</button>
-        <button class="btn btn-spock" data-choice="4">Spock</button>
+        <button aria-label="Rock" class="btn btn-rock" data-choice="0">Rock</button>
+        <button aria-label="Paper" class="btn btn-paper" data-choice="1">Paper</button>
+        <button aria-label="Scissors" class="btn btn-scissors" data-choice="2">Scissors</button><br>
+        <button aria-label="Lizard" class="btn btn-lizard" data-choice="3">Lizard</button>
+        <button aria-label="Spock" class="btn btn-spock" data-choice="4">Spock</button>
     </div>
+    <div class="message">Player wins!</div>
     <div class="player">
         <img id="player-image" src="assets/images/main.png" alt="Main image of Rock Paper Scissors Lizard Spock game">
         <p class="score">Your score:<span id="player-score">0</span></p>
