@@ -12,6 +12,7 @@ setInterval(changeColor, 2000);
 changeColor();
 
 // Add rules text when clicked
+
 function rules (){
     let rulesText = document.getElementById("rules-open");
     rulesText.innerHTML = 
@@ -26,10 +27,11 @@ function rules (){
     <li>Paper disproves Spock</li>
     <li>Spock vaporizes rock, </li>
     <li>Rock crushes scissors</li>
-    </ul>`   
+    </ul>`;    
 } 
 let rulesButton = document.getElementById("rules-list")
 rulesButton.addEventListener("click", rules);
+
 
 //Declare variables for DOM elements
  
@@ -63,8 +65,8 @@ function playGame(playerChoice) {
 
 function checkAnswer (playerChoice, computerChoice) {
     if(playerChoice == computerChoice) {
-        alert("draw");
+        message.innerHTML= `<p>Draw</p>`;
     } else {
-        alert("not draw");
+        message.innerHTML= `<p>Not Draw</p>`;
     }
 };

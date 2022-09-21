@@ -23,7 +23,7 @@ body {
 .btn {
     background-color: #ececec;
     color: #0066ff;
-    margin-top: 10px;
+    margin-top: 20px;
     height: 70px;
     width: 80px;
     border-radius: 50%;
@@ -48,11 +48,11 @@ p {
 }
 #player-image {
     width: 140px; 
-    height: 180px;  
+    height: 170px;  
 }
 #computer-image {
     width: 140px; 
-    height: 180px; 
+    height: 170px; 
 }
 .score {  
     margin-top: 10px;
@@ -60,7 +60,7 @@ p {
 }
 .rules {
     display: inline-block;
-    margin:10px auto;
+    margin:20px auto;
     width: 100%;
 }
 #rules-list:hover{
@@ -77,8 +77,8 @@ p {
     width: fit-content;
     margin: 0 auto;
 }
-.message {
-    margin-top: 10px;
+#message {
+    margin-top: 20px;
 }
 
 @media screen and (min-width : 650px) {
@@ -90,5 +90,5 @@ p {
         width: 40%;
         height: 450px;     
 }
-
+p {font-size:300%;}
 }
