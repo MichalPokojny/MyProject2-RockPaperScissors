@@ -40,6 +40,7 @@ let playerImage = document.getElementById("player-image");
 let computerImage = document.getElementById("computer-image");
 let message = document.getElementById("message");
 let choice = ["rock", "paper", "scissors", "lizard", "spock"]
+
 //Add event listeners to buttons
 
 for (let button of buttons) {
@@ -52,7 +53,7 @@ for (let button of buttons) {
 function playGame(playerChoice) {
     playerImage.src = `assets/images/${choice[playerChoice]}.png`
     playerImage.alt = choice[playerChoice];
-    
+    computerImage.src = `assets/images/lizard.png` 
     let computerChoice = Math.floor(Math.random() * 3);
 
 
