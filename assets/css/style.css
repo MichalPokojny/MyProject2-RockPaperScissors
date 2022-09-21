@@ -65,10 +65,10 @@ p {
     width: fit-content;
     
 }
-#rules2:hover{
+#rules-list:hover{
     font-size: 150%;
 }
-#rules2 {
+#rules-list {
     color: #0066ff;
     font-family: 'Roboto Mono', monospace;
     font-weight: bold;

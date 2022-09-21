@@ -10,6 +10,7 @@ function changeColor(){
 setInterval(changeColor, 2000);
 }
 changeColor();
+
 // Add rules text when clicked
 function rules (){
     let rulesText = document.getElementById("rules-open");
@@ -26,5 +27,8 @@ function rules (){
     <li>Spock vaporizes rock, </li>
     <li>Rock crushes scissors</li>
     </ul>`   
-     
 } 
+let rulesButton = document.getElementById("rules-list")
+rulesButton.addEventListener("click", rules);
+
+
