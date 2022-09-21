@@ -47,6 +47,7 @@ for (let button of buttons) {
     button.addEventListener("click", function() {
         let playerChoice = this.getAttribute("data-choice");
         playGame(playerChoice);
+        
     });
 }
 
@@ -54,10 +55,16 @@ function playGame(playerChoice) {
     playerImage.src = `assets/images/${choice[playerChoice]}.png`
     playerImage.alt = choice[playerChoice];
     
-    let computerChoice = Math.floor(Math.random() * 4);
+    let computerChoice = Math.floor(Math.random() * 5);
 
     computerImage.src = `assets/images/${choice[computerChoice]}.png`
-
-
+    checkAnswer(playerChoice, computerChoice);
 }
 
+function checkAnswer (playerChoice, computerChoice) {
+    if(playerChoice == computerChoice) {
+        alert("draw");
+    } else {
+        alert("not draw");
+    }
+};
