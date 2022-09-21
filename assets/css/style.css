@@ -2,6 +2,7 @@
     margin: 0;
 	padding: 0;
 	border: none;
+    list-style-type: none;
 }
 
 body {
@@ -60,9 +61,16 @@ p {
     display: inline-block;
     background-color: #ececec;
     margin:0 auto;
-    margin-top: 50px;
-    width: 100%;
+    margin-top: 10px;
+    width: fit-content;
+    
 }
-#game-heading {
-    color:#ff00ea;
+#rules2:hover{
+    font-size: 150%;
+}
+#rules2 {
+    color: #0066ff;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    font-size: large; 
 }
