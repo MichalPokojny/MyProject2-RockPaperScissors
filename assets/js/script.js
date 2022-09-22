@@ -15,6 +15,7 @@ changeColor();
 
 function rules (){
     let rulesText = document.getElementById("rules-open");
+    if( rulesText.textContent === ""){
     rulesText.innerHTML = 
    `<ul>
     <li>Scissors cuts paper</li>
@@ -27,7 +28,10 @@ function rules (){
     <li>Paper disproves Spock</li>
     <li>Spock vaporizes rock, </li>
     <li>Rock crushes scissors</li>
-    </ul>`;    
+    </ul>`;  
+} else {
+    rulesText.innerHTML = "";
+}  
 } 
 let rulesButton = document.getElementById("rules-list")
 rulesButton.addEventListener("click", rules);

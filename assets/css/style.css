@@ -77,8 +77,9 @@ p {
     width: fit-content;
     margin: 0 auto;
 }
-#message {
+#message p {
     margin-top: 20px;
+    font-size:200%;
 }
 
 @media screen and (min-width : 650px) {
@@ -90,5 +91,7 @@ p {
         width: 40%;
         height: 450px;     
 }
-p {font-size:300%;}
+p {
+    font-size:300%;
+}
 }
