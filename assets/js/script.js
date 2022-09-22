@@ -51,26 +51,93 @@ let choice = ["rock", "paper", "scissors", "lizard", "spock"]
 
 for (let button of buttons) {
     button.addEventListener("click", function() {
-        let playerChoice = this.getAttribute("data-choice");
+        let playerChoice = parseInt(this.getAttribute("data-choice"));
         playGame(playerChoice);
-        
     });
 }
+
+//adding image to chosen gesture
 
 function playGame(playerChoice) {
     playerImage.src = `assets/images/${choice[playerChoice]}.png`
     playerImage.alt = choice[playerChoice];
     
-    let computerChoice = Math.floor(Math.random() * 5);
-
+    let computerChoice = parseInt(Math.floor(Math.random() * 5));
     computerImage.src = `assets/images/${choice[computerChoice]}.png`
     checkAnswer(playerChoice, computerChoice);
 }
 
+// checks both answers and pritining result
+
 function checkAnswer (playerChoice, computerChoice) {
     if(playerChoice == computerChoice) {
         message.innerHTML= `<p>Draw</p>`;
-    } else {
-        message.innerHTML= `<p>Not Draw</p>`;
-    }
+    } else if (playerChoice === 0 && computerChoice === 1){
+        message.innerHTML= `<p>Computer Wins!</p>`;
+        ComputerWins();
+    } else if (playerChoice === 0 && computerChoice === 2){
+        message.innerHTML= `<p>Player Wins!</p>`;
+        playerWins();
+    } else if (playerChoice === 0 && computerChoice === 3){
+        message.innerHTML= `<p>Player Wins!</p>`;
+        playerWins();
+    } else if (playerChoice === 0 && computerChoice === 4){
+        message.innerHTML= `<p>Computer Wins!</p>`;
+        ComputerWins();
+    } else if (playerChoice === 1 && computerChoice === 0){
+        message.innerHTML= `<p>Player Wins!</p>`;
+        playerWins();
+    } else if (playerChoice === 1 && computerChoice === 2){
+        message.innerHTML= `<p>Computer Wins!</p>`;
+        ComputerWins();
+    } else if (playerChoice === 1 && computerChoice === 3){
+        message.innerHTML= `<p>Computer Wins!</p>`;
+        ComputerWins();
+    } else if (playerChoice === 1 && computerChoice === 4){
+        message.innerHTML= `<p>Player Wins!</p>`;
+        playerWins();
+    } else if (playerChoice === 2 && computerChoice === 0){
+        message.innerHTML= `<p>Computer Wins!</p>`;
+        ComputerWins();
+    } else if (playerChoice === 2 && computerChoice === 1){
+        message.innerHTML= `<p>Player Wins!</p>`;
+        playerWins();
+    } else if (playerChoice === 2 && computerChoice === 3){
+        message.innerHTML= `<p>Player Wins!</p>`;
+        playerWins();
+    } else if (playerChoice === 2 && computerChoice === 4){
+        message.innerHTML= `<p>Computer Wins!</p>`;
+        ComputerWins();
+    } else if (playerChoice === 3 && computerChoice === 0){
+        message.innerHTML= `<p>Computer Wins!</p>`;
+        ComputerWins();
+    } else if (playerChoice === 3 && computerChoice === 1){
+        message.innerHTML= `<p>Player Wins!</p>`;
+        playerWins();
+    } else if (playerChoice === 3 && computerChoice === 2){
+        message.innerHTML= `<p>Computer Wins!</p>`;
+        ComputerWins();
+    } else if (playerChoice === 3 && computerChoice === 4){
+        message.innerHTML= `<p>Player Wins!</p>`;
+        playerWins();
+    } else if (playerChoice === 4 && computerChoice === 0){
+        message.innerHTML= `<p>Player Wins!</p>`;
+        playerWins();
+    } else if (playerChoice === 4 && computerChoice === 1){
+        message.innerHTML= `<p>Computer Wins!</p>`;
+        ComputerWins();
+    } else if (playerChoice === 4 && computerChoice === 2){
+        message.innerHTML= `<p>Player Wins!</p>`;
+        playerWins();
+    } else if (playerChoice === 4 && computerChoice === 3){
+        message.innerHTML= `<p>Computer Wins!</p>`;
+        ComputerWins();
+    }              
 };
+
+function playerWins(){
+    ++playerScore.innerHTML;
+}
+function ComputerWins(){
+    ++computerScore.innerHTML;
+}
