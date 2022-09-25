@@ -1,4 +1,4 @@
-// changing color for word "Game"
+// changing color every 2 second for word "Game"
 function changeColor(){
 let i = 0;
 let colors = ['black','blue', 'red', 'orange', 'pink'];
