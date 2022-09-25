@@ -37,7 +37,7 @@ let rulesButton = document.getElementById("rules-list")
 rulesButton.addEventListener("click", rules);
 
 
-//Declare variables for DOM elements
+// Declare variables for DOM elements
  
 let buttons = document.getElementsByClassName("btn");
 let playerScore = document.getElementById("player-score");
@@ -47,7 +47,7 @@ let computerImage = document.getElementById("computer-image");
 let message = document.getElementById("message");
 let choice = ["rock", "paper", "scissors", "lizard", "spock"]
 
-//Add event listeners to buttons
+// Add event listeners to buttons
 
 for (let button of buttons) {
     button.addEventListener("click", function() {
@@ -56,7 +56,7 @@ for (let button of buttons) {
     });
 }
 
-//adding image to chosen gesture
+// Adding image to chosen gesture
 
 function playGame(playerChoice) {
     playerImage.src = `assets/images/${choice[playerChoice]}.png`
@@ -67,7 +67,7 @@ function playGame(playerChoice) {
     checkAnswer(playerChoice, computerChoice);
 }
 
-// checks both answers and pritining result
+// Checks both answers and pritining result
 
 function checkAnswer (playerChoice, computerChoice) {
     if(playerChoice == computerChoice) {
@@ -134,7 +134,7 @@ function checkAnswer (playerChoice, computerChoice) {
         ComputerWins();
     }              
 };
-
+// Function for adding score for player or computer
 function playerWins(){
     ++playerScore.innerHTML;
 }
