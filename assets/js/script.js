@@ -33,7 +33,7 @@ function rules (){
     rulesText.innerHTML = "";
 }  
 } 
-let rulesButton = document.getElementById("rules-list")
+let rulesButton = document.getElementById("rules-list");
 rulesButton.addEventListener("click", rules);
 
 
@@ -45,7 +45,7 @@ let computerScore = document.getElementById("computer-score");
 let playerImage = document.getElementById("player-image");
 let computerImage = document.getElementById("computer-image");
 let message = document.getElementById("message");
-let choice = ["rock", "paper", "scissors", "lizard", "spock"]
+let choice = ["rock", "paper", "scissors", "lizard", "spock"];
 
 // Add event listeners to buttons
 
@@ -59,11 +59,11 @@ for (let button of buttons) {
 // Adding image to chosen gesture
 
 function playGame(playerChoice) {
-    playerImage.src = `assets/images/${choice[playerChoice]}.png`
+    playerImage.src = `assets/images/${choice[playerChoice]}.png`;
     playerImage.alt = choice[playerChoice];
     
     let computerChoice = parseInt(Math.floor(Math.random() * 5));
-    computerImage.src = `assets/images/${choice[computerChoice]}.png`
+    computerImage.src = `assets/images/${choice[computerChoice]}.png`;
     checkAnswer(playerChoice, computerChoice);
 }
 
@@ -133,7 +133,7 @@ function checkAnswer (playerChoice, computerChoice) {
         message.innerHTML= `<p>Computer Wins!</p>`;
         ComputerWins();
     }              
-};
+}
 // Function for adding score for player or computer
 function playerWins(){
     ++playerScore.innerHTML;
