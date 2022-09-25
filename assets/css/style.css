@@ -86,15 +86,16 @@ p {
 
 /* Media query for large screens 650px above*/
 @media screen and (min-width : 650px) {
-    #player-image {
-        width: 40%; 
-        height: 450px;  
+    #player-image, #computer-image  {
+        width: 300px; 
+        height: 420px;  
     }
-    #computer-image {
-        width: 40%;
-        height: 450px;     
-}
 p {
-    font-size:300%;
+    font-size:180%;
 }
+}
+@media screen and (min-width : 1050px) {
+    p {
+        font-size:300%;
+    }
 }
