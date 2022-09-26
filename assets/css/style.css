@@ -1,10 +1,9 @@
 * {
     margin: 0;
-	padding: 0;
-	border: none;
+    padding: 0;
+    border: none;
     list-style-type: none;
 }
-
 body {
     background-color: #FFFFFF;
     font-family: 'Roboto Mono', monospace;
@@ -28,34 +27,28 @@ body {
     height: 70px;
     width: 80px;
     border-radius: 50%;
-    font-size: 1rem;   
+    font-size: 1rem;
 }
 .btn:hover{
     background-color:#28dbb4;
-    color: #ff00ea;  
+    color: #ff00ea;
 }
 p {
     font-size: 1rem;
 }
 .player {
-    display: inline-block;
     float: left;
     width: 50%;
 }
 .computer {
-    display: inline-block;
     float: right;
     width: 50%;
 }
-#player-image {
-    width: 140px; 
-    height: 170px;  
+#player-image, #computer-image {
+    width: 140px;
+    height: 170px;
 }
-#computer-image {
-    width: 140px; 
-    height: 170px; 
-}
-.score {  
+.score {
     margin-top: 10px;
     font-weight: bold;
 }
@@ -76,26 +69,33 @@ p {
     color: #0066ff;
     font-family: 'Roboto Mono', monospace;
     font-weight: bold;
-    font-size: large; 
+    font-size: large;
 }
 #rules-open {
     background-color: #ececec;
     width: fit-content;
     margin: 0 auto;
 }
-
 /* Media query for large screens 650px above*/
 @media screen and (min-width : 650px) {
-    #player-image, #computer-image  {
-        width: 300px; 
-        height: 420px;  
-    }
-p {
-    font-size:180%;
-}
+    #player-image, #computer-image {
+        width: 300px;
+        height: 420px;
+   }
+    p {
+        font-size:180%;
+   }
 }
 @media screen and (min-width : 1050px) {
     p {
         font-size:300%;
+   }
+}
+@media screen and (max-width : 345px) {
+    .score {
+        word-spacing: 200px;
+    }
+    #player-image, #computer-image {
+        border: 1px solid white;
     }
 }
