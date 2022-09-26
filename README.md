@@ -10,9 +10,9 @@ It is targeted for adults as well as children. Users of this game can learn rule
 
 ## User stories
 
-- As a visiting user, I am interested to play a game of Rock Paper Scissors Lizard Spock.
-- As a visiting user, I would like to spend some time playing and just have fun.
-- As a visiting user, I would like to learn the rules of the game.
+- As a visiting user, I want to play a game of Rock Paper Scissors Lizard Spock, so I know how to play it.
+- As a visiting user, I would like to spend some time playing some game so this Rock Paper Scissors Lizard Spock is perfect for relax.
+- As a visiting user, I would like to learn the rules of the game, so I can play it with my friends.
 
 ## Features
 
