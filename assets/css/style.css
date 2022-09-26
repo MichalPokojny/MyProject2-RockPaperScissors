@@ -22,7 +22,7 @@ body {
 }
 .btn {
     background-color: #ececec;
-    color: #0066ff;
+    color: #00265f;
     margin-top: 20px;
     height: 70px;
     width: 80px;
@@ -61,20 +61,24 @@ p {
     display: inline-block;
     margin:20px auto;
     width: 100%;
+    
+
 }
 #rules-list:hover{
     font-size: 150%;
 }
 #rules-list {
-    color: #0066ff;
+    color: #00265f;
     font-family: 'Roboto Mono', monospace;
     font-weight: bold;
     font-size: large;
+    border-radius: 10%;
 }
 #rules-open {
     background-color: #ececec;
     width: fit-content;
     margin: 0 auto;
+    border-radius: 10%;
 }
 /* Media query for large screens 650px above*/
 @media screen and (min-width : 650px) {

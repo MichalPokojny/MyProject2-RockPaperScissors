@@ -64,6 +64,7 @@ function playGame(playerChoice) {
     
     let computerChoice = parseInt(Math.floor(Math.random() * 5));
     computerImage.src = `assets/images/${choice[computerChoice]}.png`;
+    computerImage.alt = choice[computerChoice];
     checkAnswer(playerChoice, computerChoice);
 }
 
