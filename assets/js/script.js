@@ -26,7 +26,7 @@ function rules (){
     <li>Scissors decapitates lizard</li>
     <li>Lizard eats paper</li>
     <li>Paper disproves Spock</li>
-    <li>Spock vaporizes rock, </li>
+    <li>Spock vaporizes rock</li>
     <li>Rock crushes scissors</li>
     </ul>`;  
 } else {
