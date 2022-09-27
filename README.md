@@ -123,11 +123,11 @@ Wireframe for desktop device.<br>
 
 ## Testing
 
-
 - I tested this webpage on Google Chrome, Mozilla Firefox, and on Safari.
 - I confirmed that this project is fully responsive, and works on every screen device using the dev tools device toolbar.
 
-### Bugs
+
+**Bugs**
 
 **Solved bugs**
 
@@ -144,7 +144,7 @@ Wireframe for desktop device.<br>
 - Javascript 
 -- No errors were found on [JShint](https://jshint.com/), only warnings for using ES6
 
-#### Lighthouse testing
+**Lighthouse testing**
 
 <p align="center">
 Desktop <br>
