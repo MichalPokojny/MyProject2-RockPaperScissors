@@ -126,7 +126,6 @@ Wireframe for desktop device.<br>
 - I tested this webpage on Google Chrome, Mozilla Firefox, and on Safari.
 - I confirmed that this project is fully responsive, and works on every screen device using the dev tools device toolbar.
 
-
 **Bugs**
 
 **Solved bugs**
@@ -160,6 +159,27 @@ Phone<br>
 
 No unfixed bugs
 
+## General overview
+
+**Gesture button area**
+
+- Expected
+-- Feature is expected to clicked and sign the accurate image to player area based on user choice of gesture and also do the math random calculation for computer area and assign a accurate image and based on the result update the live score.
+- Testing
+-- Tested the feature by clicking one of the buttons.
+- Result 
+-- The feature responded as expected and assign the correct image and update the score.
+
+**Rules button area**
+
+- Expected
+-- Feature is expected to be clicked when user want to see the rules of the game.
+- Testing
+-- Tested the feature by clicking the "Rules" button.
+- Result 
+-- The feature responded as expected and showed the unordered list area of the game rules.
+
+
 ## Deployment
 
 - The site was deployed to GitHub pages. The steps to deploy are as follows:
@@ -173,9 +193,14 @@ No unfixed bugs
   - The site can be also deployed on GitPod. The steps to deploy are as follows:
    - In the gitpod workspace go to MyProject1 click on the index.html
    - Once opened, in the terminal type: python3 -m http.server
-   - Local link will appear in the terminal, click on it and the webpage will open in a new tab
+   - Local link will appear in the terminal, click on it and the webpage will open in a new tab.
 
-   
+- To Fork this repositary:
+
+  - Navigate to GitHub project repositary [Rock Paper Scissors Lizard Spock](https://michalpokojny.github.io/MyProject2-RockPaperScissorsLizardSpock/)
+  - In the right hand corner see the "Fork" section and click on it.
+  - Select an owner for the forked repository.
+  - Click Create fork button.
 
 
 ## Credits

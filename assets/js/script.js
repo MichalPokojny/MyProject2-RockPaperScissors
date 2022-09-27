@@ -142,3 +142,4 @@ function playerWins(){
 function ComputerWins(){
     ++computerScore.innerHTML;
 }
+
