@@ -128,9 +128,7 @@ Wireframe for desktop device.<br>
 
 **Bugs**
 
-**Solved bugs**
-
--  
+-- No bugs made during the develop of the project
 
 **Validator testing**
 
