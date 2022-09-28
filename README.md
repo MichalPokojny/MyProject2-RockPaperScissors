@@ -159,26 +159,45 @@ Phone<br>
 
 No unfixed bugs
 
-## General overview
+## Testing user stories
 
 **Gesture button area**
 
 - Expected
 -- Feature is expected to clicked and sign the accurate image to player area based on user choice of gesture and also do the math random calculation for computer area and assign a accurate image and based on the result update the live score.
+
+<p align="center">
+  <img src="docs/game-heading.png">
+</p> 
+
 - Testing
 -- Tested the feature by clicking one of the buttons.
+
 - Result 
 -- The feature responded as expected and assign the correct image and update the score.
+
+<p align="center">
+  <img src="docs/game-section.png">
+</p> 
 
 **Rules button area**
 
 - Expected
 -- Feature is expected to be clicked when user want to see the rules of the game.
+
+<p align="center">
+  <img src="docs/rules-list.png">
+</p>
+
 - Testing
 -- Tested the feature by clicking the "Rules" button.
+
 - Result 
 -- The feature responded as expected and showed the unordered list area of the game rules.
 
+<p align="center">
+  <img src="docs/rules-list-clicked.png">
+</p>
 
 ## Deployment
 
