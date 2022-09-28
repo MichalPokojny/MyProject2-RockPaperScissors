@@ -17,7 +17,7 @@ function playGame(playerChoice) {
     playerImage.alt = CHOICE[playerChoice];
 
     let computerChoice = parseInt(Math.floor(Math.random() * 5));
-    
+
     computerImage.src = `assets/images/${CHOICE[computerChoice]}.png`;
     computerImage.alt = CHOICE[computerChoice];
     checkAnswer(playerChoice, computerChoice);
@@ -119,18 +119,18 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     function initializeGame() {
         let buttons = document.getElementsByClassName("btn");
-           for (let button of buttons) {
+        for (let button of buttons) {
             button.addEventListener("click", selectPlayerChoice);
         }
-        }
-        initializeGame();
+    }
+    initializeGame();
 
-    // 
+    // Assign player choice to variable
 
-        function selectPlayerChoice() {
-            let playerChoice = parseInt(this.getAttribute("data-choice"));
-                   playGame(playerChoice);
-           }
+    function selectPlayerChoice() {
+        let playerChoice = parseInt(this.getAttribute("data-choice"));
+        playGame(playerChoice);
+    }
 
     // Add rules text when clicked
 
