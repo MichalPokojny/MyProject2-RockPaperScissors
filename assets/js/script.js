@@ -1,42 +1,3 @@
-// Change color every 2 second for word "Game"
-function changeColor(){
-let i = 0;
-let colors = ['black','blue', 'red', 'orange', 'pink'];
-
-function changeColor(){
-    document.getElementById("game-heading").style.color = colors[i];
-    i++; 
-}
-setInterval(changeColor, 2000);
-}
-changeColor();
-
-// Add rules text when clicked
-
-function rules (){
-    let rulesText = document.getElementById("rules-open");
-    if( rulesText.textContent === ""){
-    rulesText.innerHTML = 
-   `<ul>
-    <li>Scissors cuts paper</li>
-    <li>Paper covers rock</li>
-    <li>Rock crushes lizard</li>
-    <li>Lizard poisons Spock</li>
-    <li>Spock smashes scissors</li>
-    <li>Scissors decapitates lizard</li>
-    <li>Lizard eats paper</li>
-    <li>Paper disproves Spock</li>
-    <li>Spock vaporizes rock</li>
-    <li>Rock crushes scissors</li>
-    </ul>`;  
-} else {
-    rulesText.innerHTML = "";
-}  
-} 
-let rulesButton = document.getElementById("rules-list");
-rulesButton.addEventListener("click", rules);
-
-
 // Declare variables for DOM elements
  
 let buttons = document.getElementsByClassName("btn");
@@ -45,7 +6,38 @@ let computerScore = document.getElementById("computer-score");
 let playerImage = document.getElementById("player-image");
 let computerImage = document.getElementById("computer-image");
 let message = document.getElementById("message");
-let choice = ["rock", "paper", "scissors", "lizard", "spock"];
+let rulesButton = document.getElementById("rules-list");
+let rulesListOpen = document.getElementsByClassName("rules-open");
+const choice = ["rock", "paper", "scissors", "lizard", "spock"];
+const colors = ['black','blue', 'red', 'orange', 'pink'];
+
+// Change color every 2 second for word "Game"
+
+function changeColor(){
+
+let i = 0;
+
+function changed(){
+    document.getElementById("game-heading").style.color = colors[i];
+    i++; 
+}
+setInterval(changed, 2000);
+}
+changeColor();
+
+// Add rules text when clicked
+
+rulesButton.addEventListener("click", rules);
+
+function rules (){
+    let rulesText = document.getElementById("rules-open");
+    if( rulesText.classList.contains("hide") ){
+    rulesText.classList.remove("hide");
+} else {
+    rulesText.classList.add("hide");
+}  
+}
+
 
 // Add event listeners to buttons
 
