@@ -139,7 +139,7 @@ Wireframe for desktop device.<br>
 - Accessibility
 -- I confirmed that the images, colors, and fonts chosen are easy to read and accessible by running it through the Google Chrome lighthouse in devtools.
 - Javascript 
--- No errors were found on [JShint](https://jshint.com/), only warnings for using ES6
+-- No errors were found on [JShint](https://jshint.com/), only 1 warning for function playgame(); declared within loops referencing an outer scoped variable.
 
 **Lighthouse testing**
 
