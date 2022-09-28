@@ -225,7 +225,7 @@ No unfixed bugs
 
 **Content**
 
-- Some of the javascript code I got inspired from [w3schools](w3schools.com)
+- Javascript code to change colors every few seconds and game functions I got inspired from [w3schools](w3schools.com)
 - Colours image taken from [Coolors](https://coolors.co/)
 - Inspiration and some of the code of this game were taken from the [Love-Maths](https://github.com/Code-Institute-Solutions/love-maths-2.0-sourcecode) project at [Code Institute](https://codeinstitute.net/ie/)
 
