@@ -1,5 +1,7 @@
 // Declare variables for DOM elements
  
+const choice = ["rock", "paper", "scissors", "lizard", "spock"];
+const colors = ['black','blue', 'red', 'orange', 'pink'];
 let buttons = document.getElementsByClassName("btn");
 let playerScore = document.getElementById("player-score");
 let computerScore = document.getElementById("computer-score");
@@ -7,23 +9,8 @@ let playerImage = document.getElementById("player-image");
 let computerImage = document.getElementById("computer-image");
 let message = document.getElementById("message");
 let rulesButton = document.getElementById("rules-list");
-let rulesListOpen = document.getElementsByClassName("rules-open");
-const choice = ["rock", "paper", "scissors", "lizard", "spock"];
-const colors = ['black','blue', 'red', 'orange', 'pink'];
 
-// Change color every 2 second for word "Game"
 
-function changeColor(){
-
-let i = 0;
-
-function changed(){
-    document.getElementById("game-heading").style.color = colors[i];
-    i++; 
-}
-setInterval(changed, 2000);
-}
-changeColor();
 
 // Add rules text when clicked
 
@@ -37,7 +24,6 @@ function rules (){
     rulesText.classList.add("hide");
 }  
 }
-
 
 // Add event listeners to buttons
 
@@ -64,66 +50,66 @@ function playGame(playerChoice) {
 
 function checkAnswer (playerChoice, computerChoice) {
     if(playerChoice == computerChoice) {
-        message.innerHTML= `<p>Draw</p>`;
+        message.innerHTML= "Draw";
     } else if (playerChoice === 0 && computerChoice === 1){
-        message.innerHTML= `<p>Computer Wins!</p>`;
+        message.innerHTML= "Computer Wins!";
         ComputerWins();
     } else if (playerChoice === 0 && computerChoice === 2){
-        message.innerHTML= `<p>Player Wins!</p>`;
+        message.innerHTML= "Player Wins!";
         playerWins();
     } else if (playerChoice === 0 && computerChoice === 3){
-        message.innerHTML= `<p>Player Wins!</p>`;
+        message.innerHTML= "Player Wins!";
         playerWins();
     } else if (playerChoice === 0 && computerChoice === 4){
-        message.innerHTML= `<p>Computer Wins!</p>`;
+        message.innerHTML= "Computer Wins!";
         ComputerWins();
     } else if (playerChoice === 1 && computerChoice === 0){
-        message.innerHTML= `<p>Player Wins!</p>`;
+        message.innerHTML= "Player Wins!";
         playerWins();
     } else if (playerChoice === 1 && computerChoice === 2){
-        message.innerHTML= `<p>Computer Wins!</p>`;
+        message.innerHTML= "Computer Wins!";
         ComputerWins();
     } else if (playerChoice === 1 && computerChoice === 3){
-        message.innerHTML= `<p>Computer Wins!</p>`;
+        message.innerHTML= "Computer Wins!";
         ComputerWins();
     } else if (playerChoice === 1 && computerChoice === 4){
-        message.innerHTML= `<p>Player Wins!</p>`;
+        message.innerHTML= "Player Wins!";
         playerWins();
     } else if (playerChoice === 2 && computerChoice === 0){
-        message.innerHTML= `<p>Computer Wins!</p>`;
+        message.innerHTML= "Computer Wins!";
         ComputerWins();
     } else if (playerChoice === 2 && computerChoice === 1){
-        message.innerHTML= `<p>Player Wins!</p>`;
+        message.innerHTML= "Player Wins!";
         playerWins();
     } else if (playerChoice === 2 && computerChoice === 3){
-        message.innerHTML= `<p>Player Wins!</p>`;
+        message.innerHTML= "Player Wins!";
         playerWins();
     } else if (playerChoice === 2 && computerChoice === 4){
-        message.innerHTML= `<p>Computer Wins!</p>`;
+        message.innerHTML= "Computer Wins!";
         ComputerWins();
     } else if (playerChoice === 3 && computerChoice === 0){
-        message.innerHTML= `<p>Computer Wins!</p>`;
+        message.innerHTML= "Computer Wins!";
         ComputerWins();
     } else if (playerChoice === 3 && computerChoice === 1){
-        message.innerHTML= `<p>Player Wins!</p>`;
+        message.innerHTML= "Player Wins!";
         playerWins();
     } else if (playerChoice === 3 && computerChoice === 2){
-        message.innerHTML= `<p>Computer Wins!</p>`;
+        message.innerHTML= "Computer Wins!";
         ComputerWins();
     } else if (playerChoice === 3 && computerChoice === 4){
-        message.innerHTML= `<p>Player Wins!</p>`;
+        message.innerHTML= "Player Wins!";
         playerWins();
     } else if (playerChoice === 4 && computerChoice === 0){
-        message.innerHTML= `<p>Player Wins!</p>`;
+        message.innerHTML= "Player Wins!";
         playerWins();
     } else if (playerChoice === 4 && computerChoice === 1){
-        message.innerHTML= `<p>Computer Wins!</p>`;
+        message.innerHTML= "Computer Wins!";
         ComputerWins();
     } else if (playerChoice === 4 && computerChoice === 2){
-        message.innerHTML= `<p>Player Wins!</p>`;
+        message.innerHTML= "Player Wins!";
         playerWins();
     } else if (playerChoice === 4 && computerChoice === 3){
-        message.innerHTML= `<p>Computer Wins!</p>`;
+        message.innerHTML= "Computer Wins!";
         ComputerWins();
     }              
 }
@@ -135,3 +121,19 @@ function ComputerWins(){
     ++computerScore.innerHTML;
 }
 
+window.addEventListener('DOMContentLoaded', (event) => {
+
+    // Change color every 2 second for word "Game"
+
+    function changeColor(){
+
+        let i = 0;
+        
+        function changed(){
+            document.getElementById("game-heading").style.color = colors[i];
+            i++; 
+        }
+        setInterval(changed, 2000);
+        }
+        changeColor();
+});
