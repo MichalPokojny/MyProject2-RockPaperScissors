@@ -1,7 +1,6 @@
 // Declare variables for DOM elements
 const CHOICE = ["rock", "paper", "scissors", "lizard", "spock"];
 const COLORS = ['black', 'blue', 'red', 'orange', 'pink'];
-let buttons = document.getElementsByClassName("btn");
 let playerScore = document.getElementById("player-score");
 let computerScore = document.getElementById("computer-score");
 let playerImage = document.getElementById("player-image");
@@ -13,10 +12,12 @@ let rulesButton = document.getElementById("rules-list");
 // Adding image to chosen gesture
 
 function playGame(playerChoice) {
+
     playerImage.src = `assets/images/${CHOICE[playerChoice]}.png`;
     playerImage.alt = CHOICE[playerChoice];
 
     let computerChoice = parseInt(Math.floor(Math.random() * 5));
+    
     computerImage.src = `assets/images/${CHOICE[computerChoice]}.png`;
     computerImage.alt = CHOICE[computerChoice];
     checkAnswer(playerChoice, computerChoice);
@@ -116,12 +117,20 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     // Add event listeners to buttons
 
-    for (let button of buttons) {
-        button.addEventListener("click", function() {
+    function initializeGame() {
+        let buttons = document.getElementsByClassName("btn");
+           for (let button of buttons) {
+            button.addEventListener("click", selectPlayerChoice);
+        }
+        }
+        initializeGame();
+
+    // 
+
+        function selectPlayerChoice() {
             let playerChoice = parseInt(this.getAttribute("data-choice"));
-            playGame(playerChoice);
-        });
-    }
+                   playGame(playerChoice);
+           }
 
     // Add rules text when clicked
 
