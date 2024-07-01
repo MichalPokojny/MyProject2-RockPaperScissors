@@ -1,6 +1,6 @@
 # [Rock Paper Scissors Lizard Spock](https://michalpokojny.github.io/MyProject2-RockPaperScissorsLizardSpock/)
 
-Rock Paper Scissors Lizard Spock game is an intuitive game inspired by the Big Bang Theory comedy series.
+Rock Paper Scissors Lizard Spock is an intuitive game inspired by the Big Bang Theory comedy series.
 The main purpose of this game is to have some fun trying to beat the Computer.<br>
 It is targeted for adults as well as children. Users of this game can learn rules with the addition of two different gestures, lizard and Spock!
 
